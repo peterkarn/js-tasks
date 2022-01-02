@@ -1,9 +1,6 @@
 'use strict';
 
 // Написать функцию, которая принимает массив, а возвращает количество булевых true
-function funcName(arr) {
-    
-}
 
 Например: 
 var array1 = [
@@ -15,8 +12,16 @@ var array1 = [
     false, false, true,  true 
 ];
     
-funcName(array1) == 17, "There are 17 in total")
-
-
+// funcName(array1) == 17, "There are 17 in total")
 
 // Solutions: 
+function funcName(arr) {
+  let res = 0;
+  arr.forEach(el => {
+    if (el === true) res++
+  });
+  console.log(`There are ${res} in total`);
+  return res
+}
+
+funcName(array1)
