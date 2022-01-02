@@ -18,7 +18,7 @@ var array1 = [
 function funcName(arr) {
   let res = 0;
   arr.forEach(el => {
-    if (el === true) res++
+    if (el) res++
   });
   console.log(`There are ${res} in total`);
   return res
