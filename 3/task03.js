@@ -6,14 +6,12 @@
 // funcName("abcd")()       "abcd"
 // funcName(true)()         true
 
-function funcName(arg) {
-  function newFunc(argument) {
-    return argument
+function funcName(param) {
+  const parameter = param;
+  const innerFunction = function() {
+    return parameter
   }
-  return newFunc(arg);
+  return innerFunction
 }
-funcName(true)
+funcName(true)()
 
-
-
-// Solutions: 
