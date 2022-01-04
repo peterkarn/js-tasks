@@ -10,7 +10,5 @@ let users = [
 // Нужны только люди с такими скилами
 let skills = ['Angular', 'React'];
 
-
-
-
-// Solutions: 
+let newArray = users.filter(item => item.experience.some(subj => skills.includes(subj)))
+console.log(newArray)
