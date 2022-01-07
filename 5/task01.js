@@ -12,10 +12,28 @@
 
 // Solutions: 
 
+// function funcName(operation, value1, value2) {
+//   const regex = /[\+\-\*\/]/
+//   console.log(operation.match(regex) ? eval( value1 + operation + value2) : 'Enter correct math operator like + - * /')
+// }
+
 function funcName(operation, value1, value2) {
-  const regex = /[\+\-\*\/]/
-  console.log(operation.match(regex) ? eval( value1 + operation + value2) : 'Enter correct math operator like + - * /')
+  function log(res) {
+    console.log(res);
+  }
+  switch (operation) {
+    case '+': log(value1 + value2);
+      break;
+    case '-': log(value1 - value2);
+      break;
+    case '*': log(value1 * value2);
+      break;
+    case '/': log(value1 / value2);
+      break;
+    default: log('Enter correct math operator like + - * /');
+  }
 }
+
 
 funcName('+', 49, 7);
 funcName('*', 5, 5)
