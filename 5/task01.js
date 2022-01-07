@@ -14,7 +14,8 @@
 
 function funcName(operation, value1, value2) {
   const regex = /[\+\-\*\/]/
-  console.log(operation.match(regex) ? eval('' + value1 + operation + +value2) : 'Enter correct math operator like + - * /')
+  console.log(operation.match(regex) ? eval( value1 + operation + value2) : 'Enter correct math operator like + - * /')
 }
 
-funcName('a', 49, 7);
+funcName('+', 49, 7);
+funcName('*', 5, 5)
