@@ -11,7 +11,10 @@
 // Solutions: 
 
 function funcName(str) {
-  return str.split('').reverse().join('');
+  // return str.split('').reverse().join('');
+  return [...'123'].reverse().join('')
 }
+
+
 
 funcName('world');
